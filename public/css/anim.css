@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+          
+        align-items: center;
+        justify-content: center;
+      }
+      */
+      .load-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: load3 3.55s forwards;
+        position:fixed;
+      }
+     
+      
+      img .net {
+        width: 50%;
+        animation: load1 3.05s forwards;
+      }
+      @keyframes load1 {
+        0% {
+          width: 0%;
+        }
+        13% {
+          width: 100%;
+        }
+        26.4% {
+          width: 75%;
+        }
+        50% {
+          width: 50%;
+        }
+        100% {
+          width: 167px;
+        }
+      }
+      
+      @keyframes load3 {
+        /* 30% { 
+          opacity: 0;
+          position: absolute;
+        } */
+        100% {
+          opacity: 0;
+          position: absolute;
+          display: none;
+          visibility: hidden;
+          /* opacity: 1;
+          position: fixed;
+          top: 10px;
+          left: 27px;
+          justify-content: flex-start;
+          fill:#e50914; */
+        }
+      }

@@ -1,0 +1,13 @@
+.fgp.success input {
+     border-bottom-color: #09c372;
+ }
+ 
+ .fgp.error input {
+     border-bottom: 2px solid #ff3860;
+ }
+ 
+ .fgp .error {
+     color: #ff3860;
+     font-size: 12px;
+     height: 10px;
+ }

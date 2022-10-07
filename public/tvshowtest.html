@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovieFlix</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/d01993bd3d.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./project/assets/css/style.css" />
+  <link rel="stylesheet" href="./css/search.css">
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logoContainer">
+      <a onclick="location.href='/'">
+        <img src="./img/logo.png" class="navlogo" alt=""  /></a>
+    </div>
+    <div class="load-img">
+      <img src="./img/logo.png" alt="netflix" /> 
+    </div>
+    <ul class="navLinks">
+      <li><a onclick="location.href='/'">Home</a></li>
+      <li><a onclick="location.href='/TvShows'">TV Shows</a></li>
+      <li><a onclick="location.href='/'">Movies</a></li>
+    </ul>
+
+    <div class="rightItems">
+      <div class="search">
+        <input type="text" placeholder="Search.." id="searchbar" class="search_input" onkeyup="searchresults()">
+        <i class="fa-solid fa-magnifying-glass i1" onclick="hover()"></i>
+        <div class="search_bx2 " id="searchbox">
+
+
+
+        </div>
+      </div>
+      <a href="#" onclick="togglePopup()">
+        <i class="fa-solid fa-user i2"></i>
+      </a>
+      <a href="#">
+        <i class="fa-solid fa-right-from-bracket i3"></i>
+      </a>
+
+    </div>
+
+  </nav>
+  <div class="profile" id="profileid">
+
+    <div class="container">
+      <div class="form-container">
+        <div class="formlogin" id="fl">
+          <form method="post">
+            <i class="fa-solid fa-xmark" aria-hidden="false" onclick="togglePopup()"></i>
+
+
+            <h1>Profile</h1>
+
+            <div class="form-group">
+              <input type="text" required />
+              <label>Name</label>
+            </div>
+            <div class="form-group">
+              <input type="text" required />
+              <label>Username</label>
+            </div>
+            <div class="form-group">
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+            <button>Save</button>
+            <div class="signup">
+              <p>Need to change password <a href="#" class="signup-link" onclick="fun1()">click</a></p>
+            </div>
+          </form>
+        </div>
+        <!-- Password -->
+        <div class="formsignup1" id="fs">
+          <form method="post">
+            <i class="fa-solid fa-xmark" aria-hidden="false" onclick="togglePopup()"></i>
+            <h1>Password</h1>
+
+
+            <div class="form-group">
+              <input type="password" class="password" required />
+              <label> Old Password</label>
+              <i class="fa-light fa-eye icon"></i>
+              <i class="fa-solid fa-eye-slash showHidePw"></i>
+            </div>
+            <div class="form-group">
+              <input type="password" class="password3" required />
+              <label> New Password</label>
+              <i class="fa-light fa-eye icon"></i>
+              <i class="fa-solid fa-eye-slash showHidePw3"></i>
+            </div>
+            <div class="form-group">
+              <input type="password" class="password2" required />
+              <label>Confirm Password</label>
+              <i class="fa-light fa-eye icon"></i>
+              <i class="fa-solid fa-eye-slash showHidePw2"></i>
+            </div>
+            <input type="button" onclick="fun1()" value="Update" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- main-section -->
+  <div class="main-section" id="main-sectionid">
+    <header class="main">
+      <h1 class="heading">TV Shows</h1>
+      <p class="info">
+       why you are restricted only with movies....Lets explore the world of TV Shows....
+      </p>
+      <!-- movie-list -->
+      <!-- <div class="movie-list">
+        <button class="pre-btn"><img src="img/pre.png" alt="" /></button>
+
+        <h1 class="movie-category">Popular movie</h1>
+
+        <div class="movie-container">
+          <div class="movie">
+            <img src="img/poster.jpg" alt="" />
+            <p class="movie-title">movie name</p>
+          </div>
+        </div>
+
+        <button class="nxt-btn"><img src="img/nxt.png" alt="" /></button>
+      </div> -->
+    </header>
+  </div>
+  <script>
+    window.addEventListener("scroll", function () {
+      var x = document.querySelector("nav");
+      x.classList.toggle("navbar-black", window.scrollY > 0);
+    });
+  </script>
+  <script src="js/api.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/tvshow.js"></script>
+  <script src="./js/proflie.js"></script>
+  <script src="./js/searchtv.js"></script>
+  
+
+</body>
+
+</html>

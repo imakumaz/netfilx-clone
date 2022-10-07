@@ -1,0 +1,136 @@
+.rightItems .search .i1{
+     cursor: pointer;
+     transition: .3s linear;
+     top: 5px;
+     right: 5px;
+}
+.rightItems .search  .i1:hover {
+   color: #fff;
+   transform: scale(1.25);
+}
+
+
+.search{
+     position: relative;
+     display:flex;
+     align-items: center;
+     color:#fff;
+}
+
+.rightItems .search input.active{
+padding: 3px 0px 3px 8px;
+border-radius: 5px;
+outline: none;
+border:none;
+background: rgba(24,24,24,0.9);
+color: #fff;
+transition: .3s linear;
+-webkit-transition:  width .3s linear;
+width: 27vw;
+ border-radius: 15px;
+right: 42px;
+height: 5vh;
+position: absolute;
+/* top: -5px;  */
+}
+
+.search_input_g{
+     background-color: dimgrey;
+}
+
+/* .rightItems .search .i1:hover,{
+     width:150px
+} */
+
+
+
+.rightItems .search input{
+     width:0px;
+     border: none;
+     background: transparent;
+     outline: none;
+}
+.rightItems .search .search_bx2{
+     width: 0px;
+     height: 300px;
+     border: none;
+     background: transparent;
+     outline: none; 
+     position: absolute; 
+     top: 40px;
+       
+}
+ .rightitems i:hover{
+     
+     color: #d81d27eb;
+     font-size: 22px;
+     
+}
+
+.rightItems .search .search_bx2.active a{
+     text-decoration: none;
+     color:#fff;
+     width: 100%;
+     height:50px;
+     display: flex;
+     align-items: center;
+     /* transition: .3s linear;        */
+}
+.rightItems .search .search_bx2.active a:hover{
+       background-color: rgba(161, 156, 156, 0.6);
+}
+
+.rightItems .search .search_bx2 a img{
+     visibility: hidden;
+}
+.rightItems .search .search_bx2.active a img{
+       width: 30px;
+       height:45px;
+       visibility: visible;
+       border-radius: 5px ;
+       border: 1px solid #fff;
+       margin: 0px 5px;
+       object-fit: cover;
+      
+}
+.rightItems .search .search_bx2 a .content{
+     visibility: hidden;
+     
+
+}
+.rightItems .search .search_bx2.active a .content{
+     color: #fff;
+     visibility: visible;
+
+}
+.rightItems .search .search_bx2.active a .content h6{
+      font-size: 13px; 
+     visibility: visible;
+     /* right: 20px; */
+}
+
+ .rightItems .search .search_bx2.active{
+     width: 27vw;
+     height: 40vh;
+     transition: width .3s linear;
+     border: 1px solid #9b9595;
+     position: absolute;
+     background-color: rgba(24, 24, 24,0.4);
+     border-radius: 10px;
+     left: -28.5vw;
+     overflow: auto;
+     cursor: pointer;
+ }
+
+.rightItems .search .search_bx2.active::-webkit-scrollbar{
+     width: 7px;
+     background-color: rgba(211, 198, 198, 0.3);
+     border-radius: 20px;
+    }
+
+    .rightItems .search .search_bx2.active::-webkit-scrollbar-thumb{
+     background-color: rgba(211, 198, 198, 0.7);
+     border-radius: 20px;
+    }
+
+    
